@@ -52,7 +52,8 @@ gnome-sudoku \
 dconf-editor \
 deja-dup \
 gnome-startup-applications \
-usb-creator*
+usb-creator* \
+gnome-shell-extension-prefs
 
 # Remove Some-Shit
 
