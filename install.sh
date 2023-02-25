@@ -109,7 +109,7 @@ sudo rm /usr/share/plymouth/ubuntu-logo.png
 clear
 
 sudo rm -r /usr/share/backgrounds/*
-sudo cp ./Wallpapers/* /usr/share/backgrounds/
+sudo cp ./Wallpaper/* /usr/share/backgrounds/
 gsettings set org.gnome.desktop.background picture-uri '/usr/share/backgrounds/SpringOS-default.jpg'
 
 
