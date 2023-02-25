@@ -1,3 +1,4 @@
+!bi
 # Base Components
 
 sudo apt install -y nala preload tlp make node-typescript
