@@ -1,7 +1,7 @@
 # Base Components
 
 sudo apt install -y nala
-sudo apt remove --purge snapd
+sudo apt remove --purge snapd -y
 sudo add-apt-repository ppa:mozillateam/ppa -y
 
 # Tweaking APT
