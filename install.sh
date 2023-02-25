@@ -4,8 +4,9 @@ sudo apt install -y nala
 sudo apt remove --purge snapd
 sudo add-apt-repository ppa:mozillateam/ppa -y
 
+# Tweaking APT
 
-#
+sudo mv ./aptPref/spring.pref /etc/apt/preferences.d/
 
 # Install Desktop Environment
 
@@ -17,8 +18,8 @@ sudo sed -i "s/#WaylandEnable=false/WaylandEnable=false/g" /etc/gdm3/custom.conf
 
 # Flatpak Setup
 
-sduo nala install -y flatpak gnome-software-plugin-flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo nala install -y flatpak gnome-software-plugin-flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Debloating Vanilla-Gnome
 
