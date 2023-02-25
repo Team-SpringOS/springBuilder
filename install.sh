@@ -53,8 +53,7 @@ dconf-editor \
 deja-dup \
 gnome-startup-applications \
 usb-creator* \
-gnome-shell-extension-prefs \
-language-selector*
+gnome-shell-extension-prefs 
 
 # Download Extensions
 
