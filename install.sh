@@ -45,6 +45,26 @@ rhythmbox* \
 gnome-initial-setup \
 gnome-user-docs \
 gnome-sudoku \
-dconf-editor
+dconf-editor \
+deja-dup \
+gnome-startup-applications \
+usb-creator*
+
+# Remove Some-Shit
+
+sudo rm -r /usr/share/themes/Yaru*
+sudo rm -r /usr/share/gnome-shell/extensions/
+
+sudo rm -r /usr/share/gnome-shell/extensions/apps-menu@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/places-menu@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/window-list@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/windowsNavigator@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com
+
+
 
 # sudo reboot
