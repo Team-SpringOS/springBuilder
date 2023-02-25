@@ -1,0 +1,7 @@
+Package: snapd
+Pin: release a=*
+Pin-Priority: -10
+
+Package: firefox*
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 501
