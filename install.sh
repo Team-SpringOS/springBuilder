@@ -53,21 +53,8 @@ dconf-editor \
 deja-dup \
 gnome-startup-applications \
 usb-creator* \
-gnome-shell-extension-prefs
-
-# Remove Some-Shit
-
-sudo rm -r /usr/share/themes/Yaru*
-
-sudo rm -r /usr/share/gnome-shell/extensions/apps-menu@gnome-shell-extensions.gcampax.github.com
-sudo rm -r /usr/share/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com
-sudo rm -r /usr/share/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com
-sudo rm -r /usr/share/gnome-shell/extensions/places-menu@gnome-shell-extensions.gcampax.github.com
-sudo rm -r /usr/share/gnome-shell/extensions/screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
-sudo rm -r /usr/share/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com
-sudo rm -r /usr/share/gnome-shell/extensions/window-list@gnome-shell-extensions.gcampax.github.com
-sudo rm -r /usr/share/gnome-shell/extensions/windowsNavigator@gnome-shell-extensions.gcampax.github.com
-sudo rm -r /usr/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com
+gnome-shell-extension-prefs \
+language-selector*
 
 # Download Extensions
 
@@ -99,8 +86,20 @@ gnome-extensions enable ding@rastersoft.com
 gnome-extensions enable dash-to-panel@jderose9.github.com
 gnome-extensions enable just-perfection-desktop@just-perfection
 
-# Demonstration Apps
+# Minor Tweaks
 
-sudo apt install -y code vlc
+sudo sed -i "s/Name=gedit/Name=Text Editor/g" /usr/share/applications/org.gnome.gedit.desktop
+
+sudo rm -r /usr/share/themes/Yaru*
+
+sudo rm -r /usr/share/gnome-shell/extensions/apps-menu@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/native-window-placement@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/places-menu@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/window-list@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/windowsNavigator@gnome-shell-extensions.gcampax.github.com
+sudo rm -r /usr/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com
 
 # sudo reboot
