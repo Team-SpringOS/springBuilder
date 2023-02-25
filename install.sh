@@ -45,5 +45,6 @@ rhythmbox* \
 gnome-initial-setup \
 gnome-user-docs \
 gnome-sudoku \
+dconf-editor
 
 # sudo reboot
