@@ -64,6 +64,21 @@ sudo rm -r /usr/share/gnome-shell/extensions/window-list@gnome-shell-extensions.
 sudo rm -r /usr/share/gnome-shell/extensions/windowsNavigator@gnome-shell-extensions.gcampax.github.com
 sudo rm -r /usr/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com
 
+# Download Extensions
 
+wget https://extensions.gnome.org/extension-data/dingrastersoft.com.v54.shell-extension.zip
+unzip dingrastersoft.com.v54.shell-extension.zip -d ding@rastersoft.com
+sudo mv ding@rastersoft.com /usr/share/gnome-shell/extensions/
+
+wget https://extensions.gnome.org/extension-data/dash-to-paneljderose9.github.com.v52.shell-extension.zip
+unzip dash-to-paneljderose9.github.com.v52.shell-extension.zip -d dash-to-panel@jderose9.github.com
+sudo mv dash-to-panel@jderose9.github.com /usr/share/gnome-shell/extensions/
+
+# Extensions
+
+gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable launch-new-instance@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable ding@rastersoft.com
+gnome-extensions enable dash-to-panel@jderose9.github.com
 
 # sudo reboot
