@@ -102,4 +102,10 @@ sudo rm -r /usr/share/gnome-shell/extensions/window-list@gnome-shell-extensions.
 sudo rm -r /usr/share/gnome-shell/extensions/windowsNavigator@gnome-shell-extensions.gcampax.github.com
 sudo rm -r /usr/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com
 
+# Wallpaper
+
+sudo rm -r /usr/share/backgrounds/*
+sudo cp ./Wallpapers/* /usr/share/backgrounds/
+gsettings set org.gnome.desktop.background picture-uri '/usr/share/backgrounds/SpringOS-default.jpg'
+
 # sudo reboot
