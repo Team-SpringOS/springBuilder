@@ -1,6 +1,11 @@
 # Base Components
 
 sudo apt install -y nala
+sudo apt remove --purge snapd
+sudo add-apt-repository ppa:mozillateam/ppa -y
+
+
+#
 
 # Install Desktop Environment
 
@@ -9,6 +14,11 @@ sudo nala install -y vanilla-gnome-desktop vanilla-gnome-default-settings
 # Disable Wayland
 
 sudo sed -i "s/#WaylandEnable=false/WaylandEnable=false/g" /etc/gdm3/custom.conf
+
+# Flatpak Setup
+
+sduo nala install -y flatpak gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Debloating Vanilla-Gnome
 
@@ -34,10 +44,5 @@ rhythmbox* \
 gnome-initial-setup \
 gnome-user-docs \
 gnome-sudoku \
-
-# Flatpak Setup
-
-sduo nala install -y flatpak gnome-software-plugin-flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # sudo reboot
