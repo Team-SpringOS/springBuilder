@@ -3,6 +3,7 @@
 sudo apt install -y nala preload tlp make node-typescript
 sudo apt remove --purge snapd -y
 sudo add-apt-repository ppa:mozillateam/ppa -y
+sudo nala fetch --auto -y
 
 sudo systemctl start tlp-service
 sudo systemctl enable tlp-service
