@@ -1,3 +1,7 @@
+# Base Components
+
+sudo apt install -y nala
+
 # Install Desktop Environment
 
 sudo nala install -y vanilla-gnome-desktop vanilla-gnome-default-settings
