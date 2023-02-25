@@ -53,7 +53,6 @@ usb-creator*
 # Remove Some-Shit
 
 sudo rm -r /usr/share/themes/Yaru*
-sudo rm -r /usr/share/gnome-shell/extensions/
 
 sudo rm -r /usr/share/gnome-shell/extensions/apps-menu@gnome-shell-extensions.gcampax.github.com
 sudo rm -r /usr/share/gnome-shell/extensions/auto-move-windows@gnome-shell-extensions.gcampax.github.com
