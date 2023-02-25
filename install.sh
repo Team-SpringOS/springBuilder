@@ -1,8 +1,11 @@
 # Base Components
 
-sudo apt install -y nala
+sudo apt install -y nala preload tlp make node-typescript
 sudo apt remove --purge snapd -y
 sudo add-apt-repository ppa:mozillateam/ppa -y
+
+sudo systemctl start tlp-service
+sudo systemctl enable tlp-service
 
 # Tweaking APT
 
@@ -10,7 +13,7 @@ sudo mv ./aptPref/spring.pref /etc/apt/preferences.d/
 
 # Install Desktop Environment
 
-sudo nala install -y vanilla-gnome-desktop vanilla-gnome-default-settings
+sudo nala install -y vanilla-gnome-desktop vanilla-gnome-default-settings gedit
 
 # Disable Wayland
 
@@ -74,11 +77,28 @@ wget https://extensions.gnome.org/extension-data/dash-to-paneljderose9.github.co
 unzip dash-to-paneljderose9.github.com.v52.shell-extension.zip -d dash-to-panel@jderose9.github.com
 sudo mv dash-to-panel@jderose9.github.com /usr/share/gnome-shell/extensions/
 
+wget https://extensions.gnome.org/extension-data/just-perfection-desktopjust-perfection.v23.shell-extension.zip
+unzip just-perfection-desktopjust-perfection.v23.shell-extension.zip -d just-perfection-desktop@just-perfection
+sudo mv just-perfection-desktop@just-perfection /usr/share/gnome-shell/extensions/
+
+# Pop-Shell Auto-Titling
+
+git clone https://github.com/pop-os/shell
+cd shell
+make local-install
+cd ..
+sudo rm -r shell
+
 # Extensions
 
 gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable launch-new-instance@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable ding@rastersoft.com
 gnome-extensions enable dash-to-panel@jderose9.github.com
+gnome-extensions enable just-perfection-desktop@just-perfection
+
+# Demonstration Apps
+
+sudo apt install -y code vlc
 
 # sudo reboot
