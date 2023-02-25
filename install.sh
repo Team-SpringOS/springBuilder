@@ -102,18 +102,12 @@ sudo rm -r /usr/share/gnome-shell/extensions/window-list@gnome-shell-extensions.
 sudo rm -r /usr/share/gnome-shell/extensions/windowsNavigator@gnome-shell-extensions.gcampax.github.com
 sudo rm -r /usr/share/gnome-shell/extensions/workspace-indicator@gnome-shell-extensions.gcampax.github.com
 
-sudo rm /usr/share/plymouth/ubuntu-logo.png
+# sudo rm /usr/share/plymouth/ubuntu-logo.png
 
 # Wallpaper
-
-clear
 
 sudo rm -r /usr/share/backgrounds/*
 sudo cp ./Wallpaper/* /usr/share/backgrounds/
 gsettings set org.gnome.desktop.background picture-uri '/usr/share/backgrounds/SpringOS-default.jpg'
-
-
-
-read
 
 sudo reboot
