@@ -65,6 +65,14 @@ wget https://extensions.gnome.org/extension-data/dash-to-paneljderose9.github.co
 unzip dash-to-paneljderose9.github.com.v52.shell-extension.zip -d dash-to-panel@jderose9.github.com
 sudo mv dash-to-panel@jderose9.github.com /usr/share/gnome-shell/extensions/
 
+wget https://extensions.gnome.org/extension-data/start-overlay-in-application-viewHex_cz.v4.shell-extension.zip
+unzip start-overlay-in-application-viewHex_cz.v4.shell-extension.zip -d start-overlay-in-application-view@Hex_cz
+sudo mv start-overlay-in-application-view@Hex_cz /usr/share/gnome-shell/extensions/
+
+wget https://extensions.gnome.org/extension-data/no-overviewfthx.v12.shell-extension.zip
+unzip no-overviewfthx.v12.shell-extension.zip -d no-overview@fthx
+sudo mv no-overview@fthx /usr/share/gnome-shell/extensions/
+
 # Pop-Shell Auto-Titling
 
 git clone https://github.com/pop-os/shell
