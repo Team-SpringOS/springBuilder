@@ -6,7 +6,7 @@ A Builder Script to build SpringOS on top of a Ubuntu Server Installation.
 # Getting Started
 
 ### Step 1 : Install Ubuntu Server !!...
-Step by Step Instrucions to install Ubuntu Server, [Click Here]()
+Step by Step Instrucions to install Ubuntu Server
 
 ### Step 2 : Put the Following Commands into the Command Line Interface
 
