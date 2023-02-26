@@ -103,10 +103,14 @@ sudo rm -r /usr/share/gnome-shell/extensions/workspace-indicator@gnome-shell-ext
 
 sudo rm /usr/share/plymouth/ubuntu-logo.png
 
+sudo rm /etc/os-release
+sudo mv ./release /etc/os-release
+
 # Wallpaper
 
 sudo rm -r /usr/share/backgrounds/*
 sudo cp ./Wallpaper/* /usr/share/backgrounds/
 gsettings set org.gnome.desktop.background picture-uri '/usr/share/backgrounds/SpringOS-default.jpg'
 
-sudo reboot
+cd ..
+sudo rm -r springBuilder && sudo reboot
