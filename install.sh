@@ -65,10 +65,6 @@ wget https://extensions.gnome.org/extension-data/dash-to-paneljderose9.github.co
 unzip dash-to-paneljderose9.github.com.v52.shell-extension.zip -d dash-to-panel@jderose9.github.com
 sudo mv dash-to-panel@jderose9.github.com /usr/share/gnome-shell/extensions/
 
-wget https://extensions.gnome.org/extension-data/just-perfection-desktopjust-perfection.v23.shell-extension.zip
-unzip just-perfection-desktopjust-perfection.v23.shell-extension.zip -d just-perfection-desktop@just-perfection
-sudo mv just-perfection-desktop@just-perfection /usr/share/gnome-shell/extensions/
-
 # Pop-Shell Auto-Titling
 
 git clone https://github.com/pop-os/shell
@@ -83,7 +79,6 @@ gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable launch-new-instance@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable ding@rastersoft.com
 gnome-extensions enable dash-to-panel@jderose9.github.com
-gnome-extensions enable just-perfection-desktop@just-perfection
 
 # Minor Tweaks
 
