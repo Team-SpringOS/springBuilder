@@ -103,6 +103,12 @@ sudo rm -r /usr/share/gnome-shell/extensions/workspace-indicator@gnome-shell-ext
 
 sudo rm /usr/share/plymouth/ubuntu-logo.png
 
+sudo rm '/usr/share/pixmaps/ubuntu-logo-text-dark.png'
+sudo rm '/usr/share/pixmaps/ubuntu-logo-text.png'
+sudo rm '/usr/share/pixmaps/ubuntu-logo-icon.png'
+sudo rm '/usr/share/pixmaps/ubuntu-logo-dark.png'
+sudo rm '/usr/share/pixmaps/ubuntu-logo.svg'
+
 sudo rm /etc/os-release
 sudo mv ./release /etc/os-release
 
