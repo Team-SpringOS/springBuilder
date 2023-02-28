@@ -63,19 +63,19 @@ gnome-shell-extension-prefs
 
 wget https://extensions.gnome.org/extension-data/dingrastersoft.com.v54.shell-extension.zip
 unzip dingrastersoft.com.v54.shell-extension.zip -d ding@rastersoft.com
-sudo mv ding@rastersoft.com SYS_ENTENSIONS/
+sudo mv ding@rastersoft.com $SYS_ENTENSIONS/
 
 wget https://extensions.gnome.org/extension-data/dash-to-paneljderose9.github.com.v52.shell-extension.zip
 unzip dash-to-paneljderose9.github.com.v52.shell-extension.zip -d dash-to-panel@jderose9.github.com
-sudo mv dash-to-panel@jderose9.github.com SYS_ENTENSIONS/
+sudo mv dash-to-panel@jderose9.github.com $SYS_ENTENSIONS/
 
 wget https://extensions.gnome.org/extension-data/start-overlay-in-application-viewHex_cz.v4.shell-extension.zip
 unzip start-overlay-in-application-viewHex_cz.v4.shell-extension.zip -d start-overlay-in-application-view@Hex_cz
-sudo mv start-overlay-in-application-view@Hex_cz SYS_ENTENSIONS/
+sudo mv start-overlay-in-application-view@Hex_cz $SYS_ENTENSIONS/
 
 wget https://extensions.gnome.org/extension-data/no-overviewfthx.v12.shell-extension.zip
 unzip no-overviewfthx.v12.shell-extension.zip -d no-overview@fthx
-sudo mv no-overview@fthx SYS_ENTENSIONS/
+sudo mv no-overview@fthx $SYS_ENTENSIONS/
 
 # Pop-Shell Auto-Titling
 
@@ -98,15 +98,15 @@ sudo sed -i "s/Name=gedit/Name=Text Editor/g" /usr/share/applications/org.gnome.
 
 sudo rm -r /usr/share/themes/Yaru*
 
-sudo rm -r SYS_ENTENSIONS/apps-menu@gnome-shell-extensions.gcampax.github.com
-sudo rm -r SYS_ENTENSIONS/auto-move-windows@gnome-shell-extensions.gcampax.github.com
-sudo rm -r SYS_ENTENSIONS/native-window-placement@gnome-shell-extensions.gcampax.github.com
-sudo rm -r SYS_ENTENSIONS/places-menu@gnome-shell-extensions.gcampax.github.com
-sudo rm -r SYS_ENTENSIONS/screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
-sudo rm -r SYS_ENTENSIONS/user-theme@gnome-shell-extensions.gcampax.github.com
-sudo rm -r SYS_ENTENSIONS/window-list@gnome-shell-extensions.gcampax.github.com
-sudo rm -r SYS_ENTENSIONS/windowsNavigator@gnome-shell-extensions.gcampax.github.com
-sudo rm -r SYS_ENTENSIONS/workspace-indicator@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/apps-menu@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/auto-move-windows@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/native-window-placement@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/places-menu@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/user-theme@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/window-list@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/windowsNavigator@gnome-shell-extensions.gcampax.github.com
+sudo rm -r $SYS_ENTENSIONS/workspace-indicator@gnome-shell-extensions.gcampax.github.com
 
 sudo rm /usr/share/plymouth/ubuntu-logo.png
 
@@ -116,7 +116,7 @@ sudo rm '/usr/share/pixmaps/ubuntu-logo-icon.png'
 sudo rm '/usr/share/pixmaps/ubuntu-logo-dark.png'
 sudo rm '/usr/share/pixmaps/ubuntu-logo.svg'
 
-sudSYS_ENTENSIONSo rm /etc/os-release
+sudo rm /etc/os-release
 sudo mv ./release /etc/os-release
 
 # Wallpaper
