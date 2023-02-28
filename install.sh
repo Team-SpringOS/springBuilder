@@ -1,4 +1,4 @@
-SYS_ENTENSIONS=SYS_ENTENSIONS
+SYS_ENTENSIONS=/usr/share/gnome-shell/extensions
 
 # Base Components
 
