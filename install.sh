@@ -2,6 +2,8 @@ SYS_ENTENSIONS=/usr/share/gnome-shell/extensions
 
 # Base Components
 
+sudo apt update && sudo apt upgrade -y
+
 sudo apt install -y nala preload tlp make node-typescript
 sudo apt remove --purge snapd -y
 sudo add-apt-repository ppa:mozillateam/ppa -y
