@@ -91,7 +91,7 @@ gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable launch-new-instance@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable ding@rastersoft.com
 gnome-extensions enable dash-to-panel@jderose9.github.com
-gnome-extensions start-overlay-in-application-view@Hex_cz
+gnome-extensions enable start-overlay-in-application-view@Hex_cz
 gnome-extensions enable no-overview@fthx
 
 # Minor Tweaks
