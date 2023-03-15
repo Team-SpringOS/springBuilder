@@ -26,7 +26,10 @@ gnome-mahjongg- gnome-maps- gnome-mines- gnome-photos- gnome-sudoku- gnome-sushi
 libreoffice-calc- libreoffice-gnome- libreoffice-impress- libreoffice-math- libreoffice-ogltrans- libreoffice-pdfimport- \
 libreoffice-style-tango- libreoffice-writer- mousetweaks- rhythmbox- seahorse- simple-scan- snapd- speech-dispatcher- totem- transmission-gtk- \
 ubuntu-gnome-wallpapers- usb-creator-gtk
- # Disable Wayland
+
+sudo nala remove --purge -y ubuntu-mono gnome-online-accounts yelp gnome-user-docs dconf-editor gnome-startup-applications gnome-shell-extension-prefs
+
+# Disable Wayland
 
 sudo sed -i "s/#WaylandEnable=false/WaylandEnable=false/g" /etc/gdm3/custom.conf
 
