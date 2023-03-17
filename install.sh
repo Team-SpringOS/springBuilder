@@ -27,7 +27,7 @@ libreoffice-calc- libreoffice-gnome- libreoffice-impress- libreoffice-math- libr
 libreoffice-style-tango- libreoffice-writer- mousetweaks- rhythmbox- seahorse- simple-scan- snapd- speech-dispatcher- totem- transmission-gtk- \
 ubuntu-gnome-wallpapers- usb-creator-gtk
 
-sudo nala remove --purge -y ubuntu-mono gnome-online-accounts yelp gnome-user-docs dconf-editor gnome-startup-applications gnome-shell-extension-prefs
+sudo nala remove --purge -y ubuntu-mono gnome-todo usb-creator-gtk gnome-tweaks usb-creator-common gnome-online-accounts yelp gnome-user-docs dconf-editor gnome-startup-applications gnome-shell-extension-prefs
 
 # Disable Wayland
 
@@ -104,6 +104,15 @@ sudo mv ./release /etc/os-release
 sudo rm -r /usr/share/backgrounds/*
 sudo cp ./Wallpaper/* /usr/share/backgrounds/
 gsettings set org.gnome.desktop.background picture-uri '/usr/share/backgrounds/SpringOS-default.jpg'
+
+
+# App-Menu Tweaks
+
+gsettings set org.gnome.desktop.app-folders folder-children "['Tools']"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Tools/ name 'Tools & Utilities'
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Tools/ apps "['nm-connection-editor.desktop','org.gnome.font-viewer.desktop', 'org.gnome.Logs.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Terminal.desktop', 'gnome-language-selector.desktop', 'software-properties-gtk.desktop']"
+
+dconf write /org/gnome/shell/favorite-apps "['firefox.desktop', 'org.gnome.Nautilus.desktop']"
 
 cd ..
 sudo rm -r springBuilder && sudo reboot
